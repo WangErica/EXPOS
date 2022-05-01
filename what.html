@@ -83,6 +83,33 @@
                 @media only screen and (max-width: 300px) {
                   .text {font-size: 11px}
                 }
+                /* Next & previous buttons */
+                .prev, .next {
+                  cursor: pointer;
+                  position: absolute;
+                  top: 50%;
+                  width: auto;
+                  padding: 16px;
+                  margin-top: -22px;
+                  color: white;
+                  font-weight: bold;
+                  font-size: 18px;
+                  transition: 0.6s ease;
+                  border-radius: 0 3px 3px 0;
+                  user-select: none;
+                }
+
+                /* Position the "next button" to the right */
+                .next {
+                  right: 0;
+                  border-radius: 3px 0 0 3px;
+                }
+
+                /* On hover, add a grey background color */
+                .prev:hover, .next:hover {
+                  background-color: #f1f1f1;
+                  color: black;
+                }
             </style>
     </head>
     <body>
@@ -139,6 +166,9 @@
           <img src="https://cdn.shopify.com/s/files/1/0339/7091/3412/products/2_91686f77-dd5c-4661-9812-6d2bc1d753bf_800x800.jpg?v=1649934621" style="width:100%">
           <div class="text">PopMart SpongeBob Pajama Party Series</div>
         </div>
+          
+        <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 
         </div>
         <br>
@@ -162,6 +192,10 @@
           dots[slideIndex-1].className += " active";
           setTimeout(showSlides, 3500); // Change image every 3.5 seconds
         }
+        function plusSlides(n, no) {
+          showSlides(slideIndex[no] += n, no);
+        }
+
         </script>
     </body>
 </html>
