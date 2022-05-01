@@ -10,43 +10,29 @@
             body {
                 background-color: #FFFFFF;
             }
+            .column {
+                float: left;
+                width: 59%;
+                padding: 15px;
+            }
+            .column1 {
+                float: left;
+                width: 39%;
+                margin-top:10px;
+            }
+            .row{
+                width:100%;
+            }
+            .container-fluid{
+                width:90%;
+                margin:auto;
+            }
             .p{
                 word-spacing: 5px;
             }
-            /* Split the screen in half */
-            .split {
-              height: 80%;
-              width: 50%;
-              position: fixed;
-              z-index: 1;
-              top: 0;
-              overflow-x: hidden;
-              padding-top: 20px;
-            }
-
-            /* Control the left side */
-            .left {
-              left: 0;
-            }
-
-            /* Control the right side */
-            .right {
-              right: 0;
-            }
-
-            /* If you want the content centered horizontally and vertically */
-            .centered {
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              text-align: center;
-            }
-            #top{
-                height:20%;
-                width:100%;
-                }
-        </style>
+        </style> 
+    </head>
+    <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -60,29 +46,27 @@
               </div>
             </div>
           </nav>
-        
-    </head>
-    <body>
         <p></p>
-        <div class="split left">
-          <div class="centered">
-            <h2>Would You Consider it Gambling?</h2>
-            <p>First, what is gambling? 
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <h2>Would You Consider it Gambling?</h2>
+                <p><font size="4"><a class="p"> First, what is gambling? 
                     Gambling is betting something with value to get an uncertain outcome with the intent to win something else of value.
                     When gambling, you are putting something at risk, in hopes of gaining more that you will lose.
                     So are blind boxes gambling?
                     Yes. Blind boxes are gambling. 
                     With the knowledge of knowing that you might not get what you want, you are still making the exchange of money for the figure.
                     When purchasing the blind box, you are hoping that you get the figure you want. This is the same as hoping to win the bet, with the wanted outcome.
-                    So how are blind boxes not gambling?</p>
-          </div>
-        </div>
+                    So how are blind boxes not gambling?</a></font></p>
 
-        <div class="split right">
-          <div class="centered">
-            <h2>John Doe</h2>
-            <p>Some text here too.</p>
-          </div>
+                <p><font size="4">To find out more about the program, <a href="https://girlswhocode.com/"><font color="#D64550">Girls Who Code.</font></a></font></p>
+            </div>
+            <div class="col">
+                <center><img src="https://www.wtc.com/upload/about/officebuildings/fullbuilding_7.jpg" alt="7 World Trade Center" width="90%"></center>
+            </div>
+
+        </div>
         </div>
         
     </body>
